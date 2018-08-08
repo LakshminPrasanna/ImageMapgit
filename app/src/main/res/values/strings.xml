@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ImageMap</string>
+    <string name="title_activity_image_map">Map</string>
+    <string name="permission_denied">Permission Denied</string>
+
+    <string name="error_invalid_password">Enter Valid Password</string>
+    <string name="error_field_required">Enter Valid Email</string>
+    <string name="error_invalid_email">Invalid Email</string>
+
+
+</resources>

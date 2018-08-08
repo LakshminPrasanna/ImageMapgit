@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/activity_map_img"
+    tools:context=".ImageMapActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_relative"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/circularImage"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/imgholder"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#dedada"
+            android:scaleType="centerCrop"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="260dp"
+        android:id="@+id/map_relative"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_below="@id/img_relative">
+        <ImageView
+            android:id="@+id/map_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/staticmap" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="260dp"
+        android:layout_toRightOf="@id/map_relative"
+        android:layout_below="@id/img_relative">
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:text="Email"/>
+
+        <TextView
+            android:id="@+id/tv_email1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_email"
+            android:layout_marginTop="5dp"
+            android:text="email"/>
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_email1"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="Password" />
+
+        <TextView
+            android:id="@+id/tv_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_password"
+            android:layout_marginTop="5dp"
+            android:text="password" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pass"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="Location" />
+
+        <TextView
+            android:id="@+id/tv_lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_location"
+            android:layout_marginTop="5dp"
+            android:text="Latitude :" />
+
+        <TextView
+            android:id="@+id/tv_lat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_lat"
+            android:layout_marginRight="23dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_long"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_lat"
+            android:layout_marginTop="5dp"
+            android:text="Longitude :" />
+
+        <TextView
+            android:id="@+id/tv_long1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_long"
+            android:layout_marginRight="13dp"
+            android:text="TextView"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_long"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:text="Time" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_time"
+            android:layout_marginTop="5dp"
+            android:text="TextView" />
+
+    </RelativeLayout>
+</RelativeLayout>
